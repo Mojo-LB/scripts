@@ -20,7 +20,7 @@ cp dero_linux_amd64/* /atlantis
 touch /atlantis/stats.sh
 echo "HOST=\$(uname -n)" >> /atlantis/stats.sh
 echo "cd /atlantis" >> /atlantis/stats.sh
-echo "echo  {\"myDaemon\":\"http://127.0.0.1:30306\",\"myName\":\"$HOST \"} > config.json" >> /atlantis/stats.sh
+echo "echo  {\\\"myDaemon\\\":\\\"http://127.0.0.1:30306\\\",\\\"myName\\\":\\\"\\\$HOST \\\"} > config.json" > /atlantis/stats.sh
 echo "/./atlantis/node-side-linux" >> /atlantis/stats.sh
 
 ### Setup Crontab for auto start
