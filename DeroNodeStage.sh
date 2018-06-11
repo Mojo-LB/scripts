@@ -1,10 +1,3 @@
-## Check if First run, otherwise exit
-if [  -f /atlantis/stats.sh ]; then
-    echo "Not First run, exitting"
-    exit 0
-fi
-
-
 ### Staging
 sudo apt install screen  -y
 wget https://git.dero.io/DeroProject/dero-stats-client/raw/master/node-side-linux.tar.gz
